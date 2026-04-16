@@ -18,12 +18,13 @@ function AddCategory({setCategories}) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="submit">
       <input 
       type="text" 
       value={inputValue} 
       onChange={handleInputChange} 
       />
+      <button>Search</button>
     </form>
   );
 }
